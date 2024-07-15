@@ -68,9 +68,29 @@
     }
   }
 
+  body{
+    color: black;
+  }
+
   .ruleGroup {
     background: transparent !important;
     border: none !important;
+  }
+
+  .ruleGroup-body>.rule {
+    margin-left: 100px;
+  }
+
+  .ruleGroup-body>.rule:first-child {
+    margin-left: 0px;
+  }
+
+  .ruleGroup-body>.betweenRules {
+    margin-left: 50px;
+  }
+
+  .ruleGroup-body>.rule:first-child::before {
+    content: "where";
   }
 
   .rule-fields, .rule-operators, .rule-value {
@@ -78,4 +98,24 @@
     outline: none !important;
     border-radius: 5px;
     padding: 5px !important;
+  }
+
+  button, select {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  select {
+    border: 1px solid rgb(160, 160, 160);
+  }
+
+  button:hover {
+    background: #dda0dd22;
+  }
+
+  select:hover {
+    background: #dda0dd22;
   }
