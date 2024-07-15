@@ -19,7 +19,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 export default function Home() {
-  const [query, setQuery] = useState({
+  const [query, setQuery] = useState<any>({
     rules: [],
   });
 
